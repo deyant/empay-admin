@@ -138,3 +138,10 @@ Transaction is created in status **Approved**.
 Total transaction sum of merchant **Nike** is decreased by **50**.
 
 
+#### Authorize transaction
+[TBD]
+
+#### Reversal transaction
+[TBD]
+
+
