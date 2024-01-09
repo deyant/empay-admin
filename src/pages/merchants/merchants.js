@@ -151,7 +151,7 @@ const merchantDataSource = new CustomStore({
     key: 'id',
     insert: (values) => {
         return fetch('/api/v1/merchant', {
-            method: 'PUT',
+            method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(values)
         }).then(handleErrors)
@@ -179,7 +179,7 @@ const merchantDataSource = new CustomStore({
     },
     update: (key, values) => {
         return fetch('/api/v1/merchant/' + key, {
-            method: 'POST',
+            method: 'PUT',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(values)
         }).then(handleErrors)

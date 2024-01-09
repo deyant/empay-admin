@@ -161,7 +161,7 @@ const transactionsStore = new CustomStore({
   key: 'id',
   insert: (values) => {
     let requestOptions = {
-      method: 'PUT',
+      method: 'POST',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify(values)
     };
